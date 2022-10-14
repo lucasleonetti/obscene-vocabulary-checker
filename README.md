@@ -11,5 +11,5 @@ languages with their specific bad words. So in that case you only need to create
 ---
 The entire logic is in the 'wordsChecker' function that returns the input line processed. 
 
-inside main package you will find the executable file. Run and Fun! 
+Compile Run and Fun, (or build it!) whathever you want!
 
