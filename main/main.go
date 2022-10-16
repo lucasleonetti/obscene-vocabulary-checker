@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-var FileLines []string
+var fileLines []string
 
 func main() {
 
@@ -52,10 +52,10 @@ func wordsChecker(file *os.File, inputSen string) string {
 	scanner.Split(bufio.ScanLines)
 
 	for scanner.Scan() {
-		FileLines = append(FileLines, scanner.Text())
+		fileLines = append(fileLines, scanner.Text())
 	} //we save the censored words in our file for processing after
 
-	for _, line := range FileLines { //we travel our new slice with the censored words
+	for _, line := range fileLines { //we travel our new slice with the censored words
 		for i, word := range inputSenArr {
 			if strings.EqualFold(line, word) {
 				inputSenArr[i] = strings.Repeat("*", len(word)) //replace the bad word by censored symbol
