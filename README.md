@@ -8,7 +8,8 @@ This CLI App was create with a text motor thats censore the bad words in their i
 languages with their specific bad words. So in that case you only need to create you archive '.txt' with their bad words in their respectives languages to be censored*
 
 ---
-==**Logic flow**==
+
+## How to use it?
 
 The entire logic is in the 'wordsChecker' function that returns the input line processed.
 
